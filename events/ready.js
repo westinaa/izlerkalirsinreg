@@ -1,7 +1,7 @@
 const { REST } = require("@discordjs/rest");
 const { joinVoiceChannel } = require('@discordjs/voice');
 const { Routes } = require("discord-api-types/v10");
-const { TOKEN } = require("../config.json");
+const { TOKEN } = require("../config.js");
 const { Client, GatewayIntentBits, Partials } = require("discord.js");
 const INTENTS = Object.values(GatewayIntentBits);
 const PARTIALS = Object.values(Partials);
