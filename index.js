@@ -48,6 +48,19 @@ readdirSync('./events').forEach(e => {
     console.log(`[EVENT] ${name} eventi yüklendi.`);
 });
 
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Bot aktif 🚀");
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Uygulama ayakta: http://localhost:${port}`);
+});
+
+
 // Komutları çalıştırırken
 client.on('messageCreate', async (message) => {
     // Mesaj bot tarafından yazılmışsa geç
