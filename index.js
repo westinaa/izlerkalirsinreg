@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, Partials, PermissionsBitField, EmbedBuilder, ButtonStyle, ActionRowBuilder, ButtonBuilder } = require("discord.js");
 const { readdirSync } = require("fs");
-const { PREFIX, TOKEN } = require("./config.json");
+const { PREFIX, TOKEN } = require("./config.js");
 const westinadb = require("croxydb");
 
 const INTENTS = Object.values(GatewayIntentBits);
